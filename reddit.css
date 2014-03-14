@@ -1,11 +1,70 @@
-#head{
-
+/* default styles */
+body {
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	height: 100%; /* to allow entire screen divs, idk if we need tho */
+	font-size: 12px;
 }
 
-#subhead{
 
+/* header styling */
+#header {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
 }
 
-#content{
+#nameplate {
+	/* the word REDDIT */
+}
+#subhead {
+	/* the words explore connect laugh */
+}
+#iconbar {
+	/* wrapper for icons */
+}
+
+
+/* body styling */
+#content {
 	
+}
+.center {
+	margin: 0 auto;
+	width: 80%;
+}
+
+/* 8 col layout */
+.row {
+
+}
+.col {
+	display: inline-block;
+}
+.span1 {
+
+}
+.span2 {
+
+}
+.span3 {
+
+}
+/* content holders */
+.full {
+
+}
+.half {
+
+}
+
+/* upvote/downvote wrapper */
+.votewrap {
+	/* clickthrough this baby - is this inherited? */
+	pointer-events: none;
+}
+.upvote {
+	/* wraps upvote icon */
+}
+.downvote {
+	/* wraps downvote icon */
 }
