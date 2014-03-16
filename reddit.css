@@ -43,7 +43,7 @@ body {
 .row {
 	width: 100%;
 	display: table;
-	padding: 10px 0;;;;
+	padding: 10px 0;
 
 }
 .col {
@@ -51,7 +51,6 @@ body {
 	display: table-cell;
 	padding: 1.8%;
 	
-	overflow: auto;
 }
 .span1 {
 	/*width: 12.5%;*/
@@ -70,10 +69,12 @@ body {
 .full {
 	height: 100%;
 	background-color: #f2f2f2;
+	overflow: auto;
 }
 .half {
 	height: 45%;
 	background-color: #f2f2f2;
+	overflow: auto;
 }
 .span1 .top {
 	margin-bottom: 17%;
