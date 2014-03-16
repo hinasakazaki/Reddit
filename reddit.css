@@ -28,7 +28,11 @@ body {
 
 /* body styling */
 #content {
-	
+	width: 100%;
+	background-image: url("./i/tahoe.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .center {
 	margin: 0 auto;
@@ -37,32 +41,59 @@ body {
 
 /* 8 col layout */
 .row {
+	width: 100%;
+	display: table;
+	padding: 10px 0;;;;
 
 }
 .col {
-	display: inline-block;
+	height: 200px;
+	display: table-cell;
+	padding: 1.8%;
+	
+	overflow: auto;
 }
 .span1 {
-
+	/*width: 12.5%;*/
+	width: 10%;
 }
 .span2 {
-
+	/*width: 25%;*/
+	width: 20%;
 }
 .span3 {
-
+	/*width: 37.5%;*/
+	width: 30%;
+	margin: 1%;
 }
 /* content holders */
 .full {
-
+	height: 100%;
+	background-color: #f2f2f2;
 }
 .half {
-
+	height: 45%;
+	background-color: #f2f2f2;
+}
+.span1 .top {
+	margin-bottom: 17%;
+}
+.span2 .top {
+	margin-bottom: 7.8%;
+}
+.span3 .top {
+	margin-bottom: 4.5%;
+}
+.text p {
 }
 
 /* upvote/downvote wrapper */
 .votewrap {
 	/* clickthrough this baby - is this inherited? */
 	pointer-events: none;
+	height: 100%;
+	width: 100%;
+	position: relative;
 }
 .upvote {
 	/* wraps upvote icon */
