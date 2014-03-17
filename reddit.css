@@ -43,14 +43,11 @@ body {
 .row {
 	width: 100%;
 	display: table;
-	padding: 10px 0;
-
 }
 .col {
 	height: 200px;
 	display: table-cell;
 	padding: 1.8%;
-	
 }
 .span1 {
 	/*width: 12.5%;*/
