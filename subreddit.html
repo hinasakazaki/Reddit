@@ -2,10 +2,10 @@
 <html>
   <head>
   	<!-- copy pasta this stuff from index -->
-    <title>Reddit</title>
+    <title>hiner'z Subreddits</title>
 
     <link rel="stylesheet" type="text/css" href="reddit.css">
-    <link rel="stylesheet" type="text/css" href="userpage.css">
+    <link rel="stylesheet" type="text/css" href="subreddit.css">
 
     <!-- google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -20,17 +20,106 @@
     <div id="iconbar">
       <div id= "userinfo"> hinerz [320] </div>
       <div id="button"> <img src="img/icons/mail.png" alt="mail" width="30" height="30"> </div>
-      <div id="button"> <img src="img/icons/search.png" alt="search" width="30" height="30"> </div>
+      <div id="search-button"> <img src="img/icons/search.png" alt="search" width="30" height="30">
+        
+        
+        <div id = "search-form">
+          <input type="text"  name="comment" id="comment" value="search">
+          <div id = "go">
+            <a href = "search.html"> 
+            go  </a>  
+          </div>
+        </div>
+
+        
+      </div>
+
       <div id="button"> <img src="img/icons/pencil.png" alt="post" width="30" height="30"> </div>
     
+
+
       <div id= "subreddit">
-      <img src="img/icons/sub.png" alt="explore subreddits" width="30" height"30">
-
-
+        <img src="img/icons/sub.png" alt="explore subreddits" width="30" height"30">
+        <div id="subreddit-bar">
+          <class id= "subreddit-item"> r/animals </class>
+          <class id= "subreddit-item"> r/aww </class>
+          <class id= "subreddit-item"> r/beauty</class>
+          <class id= "subreddit-item"> r/bluesclues </class>
+          <class id= "subreddit-item"> r/charisma </class>
+          <class id= "subreddit-item"> r/chastity </class>
+          <class id= "subreddit-item"> r/christianity </class>
+          <class id= "subreddit-item"> r/delicious </class>
+          <class id= "subreddit-item"> r/dreams </class>
+          <class id= "subreddit-item"> r/ectasy</class>
+          <class id= "subreddit-item"> r/fudge</class>
+          <class id= "subreddit-item"> r/fun</class>
+          <class id= "subreddit-item"> r/grandma </class>
+          <class id= "subreddit-item"> r/grandson </class>
+          <class id= "subreddit-item"> r/grease </class>
+          <class id= "subreddit-item"> r/gaaahh </class>
+          <class id= "subreddit-item"> r/hinaaaa </class>
+          <class id= "subreddit-item"> r/hinako</class>
+          <div id= "your-subreddits"> <a href= subreddit.html> Explore your subreddits </a> </div>
+        </div>
       </div>
     </div>
-  <div id="content">
-    <!-- put stuff here! -->
-  </div>
+    </div>
+
+    <div id="content">
+
+      <div id= "subs-container">
+
+      <div class="item">
+        <div class="item-thumbnail"><img class="img-scaled-wh" src="i/china.jpg" /></div>
+        <div class="item-info">
+          <div class="item-title">r/antiques</div>
+          <div class="item-subhead">auctions, prices, and history.</div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="item-thumbnail"><img class="img-scaled-wh" src="i/curve.jpg" /></div>
+        <div class="item-info">
+          <div class="item-title">r/earthporn</div>
+          <div class="item-subhead">Mother Nature in all beauty.</div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="item-thumbnail"><img class="img-scaled-wh" src="i/ponies.jpg" /></div>
+        <div class="item-info">
+          <div class="item-title">r/ponies</div>
+          <div class="item-subhead">You like ponies, don't you?</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-thumbnail"><img class="img-scaled-wh" src="i/anime.jpg" /></div>
+        <div class="item-info">
+          <div class="item-title">r/anime</div>
+          <div class="item-subhead">Animuuuu</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-thumbnail"><img class="img-scaled-wh" src="i/mmm.jpg" /></div>
+        <div class="item-info">
+          <div class="item-title">r/avocadosgonewild</div>
+          <div class="item-subhead">Sexy, sexy avocados.</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-thumbnail"><img class="img-scaled-wh" src="i/gothninja.jpg" /></div>
+        <div class="item-info">
+          <div class="item-title">r/malefashionadvice</div>
+          <div class="item-subhead"> Clothes make the man.</div>
+        </div>
+      </div>
+
+
+    </div>
 </body>
 </html>

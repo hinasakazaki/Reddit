@@ -23,6 +23,7 @@ body {
 	opacity:0.75;
 }
 
+
 #nameplate {
 	float: left;
 	margin-top: 5px;
@@ -64,6 +65,36 @@ body {
 	padding-left:5px;
 	display:inline-block;
 }
+
+#search-button {
+	padding-left:5px;
+	display:inline-block;
+}
+#search-button:hover {
+	opacity: 0.5;
+}
+
+#search-form {
+	display:none;	
+}
+#search-button:hover #search-form{
+	display:inline-block;
+}
+#go {
+	display:inline-block;
+	font-size:12px;
+	width: 18;
+	padding:1;
+	font-family:"Merriweather", serif;
+	border-radius: 5px;
+	background-color: #f17aa9;
+}
+
+#go a{
+	text-decoration: none;
+	color:inherit;
+}
+
 #button:hover {
 	opacity: 0.5;
 }
@@ -71,6 +102,50 @@ body {
 #subreddit {
 	display:inline-block;
 	padding-left:20px;
+}
+
+#subreddit:hover {
+	opacity:0.75;
+}
+
+#your-subreddits {
+	text-align: center;
+	color: black;
+	font-size:12;
+	margin:auto;
+	padding-top: 10px;
+
+}
+#your-subreddits:hover{
+	opacity:0.75;
+}
+
+#your-subreddits a{
+	text-decoration: none;
+	color:inherit;
+}
+
+#subreddit-bar {
+	display:none;
+	z-index:99;
+	height:100%;
+	width:30;
+	margin-top:30px;
+	float:left;
+}
+
+#subreddit-item {
+	font-size:12px;
+	font-family: 'Merriweather', serif;
+	opacity:none;
+}
+
+#subreddit-item:hover{
+	opacity:0.75;
+}
+
+#subreddit:hover #subreddit-bar{
+	display:block;
 }
 
 /* body styling */

@@ -46,4 +46,6 @@ $(document).ready( function() {
 		}
 		wrapper.removeClass('upvoted');
 	});
+
+
 });
