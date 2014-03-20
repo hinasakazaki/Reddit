@@ -25,7 +25,11 @@ body {
 
 #nameplate {
 	/* the word REDDIT */
+	
+}
+#nameplate a {
 	text-decoration: none;
+	color:inherit;
 }
 #nameplate:hover {
 	opacity: 0.5;
