@@ -125,7 +125,6 @@ body {
 	overflow: hidden;
 	position: relative;
 	border-radius: 3px;
-	box-shadow: 0 4px 2px -2px gray;
 }
 .full img {
 	width: 100%;
@@ -176,9 +175,12 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+
+	border-radius: 8px;
 }
 .votewrap.fourtyfive {
 	height: 45%;
+	border-radius: 3px;
 }
 .votewrap:hover {
 	/* #333 */
