@@ -8,7 +8,6 @@ body {
 	font-size: 12px;
 }
 
-
 /* header styling */
 #header {
 	font-family: 'Montserrat', sans-serif;
@@ -40,20 +39,15 @@ body {
 	float:right;
 
 }
-#button {h
+#button {
 	padding-left:5px;
 	display:inline-block;
-
 }
 
 
 /* body styling */
 #content {
 	width: 100%;
-	background-image: url("./i/tahoe.jpg");
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .center {
 	margin: 0 auto;
@@ -69,6 +63,8 @@ body {
 	height: 200px;
 	display: table-cell;
 	padding: 1.8%;
+	position: relative;
+	z-index: 10;
 }
 .span1 {
 	/*width: 12.5%;*/
@@ -88,11 +84,19 @@ body {
 	height: 100%;
 	background-color: #f2f2f2;
 	overflow: auto;
+	position: relative;
+	z-index: -1;
 }
 .half {
-	height: 45%;
+	/* okay fine its not really half */
+	height: 100%;
 	background-color: #f2f2f2;
+	z-index: -1;
 	overflow: auto;
+	position: relative;
+}
+.top.half {
+	z-index: -2;
 }
 .span1 .top {
 	margin-bottom: 17%;
@@ -110,13 +114,52 @@ body {
 .votewrap {
 	/* clickthrough this baby - is this inherited? */
 	pointer-events: none;
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	position: relative;
+
+	transition: opacity 0.5 linear;
+	opacity: 1;
+	z-index: initial;
+}
+.votewrap.fourtyfive {
+	height: 45%;
+}
+.votewrap:hover {
+	opacity: 0.5;
+}
+.votecount {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 48px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 100px;
+	line-height: 100px;
+	margin-left: -75px;
+	margin-top: -50px;
 }
 .upvote {
+	width: 100%;
+	height: 50%;
+	position: absolute;
 	/* wraps upvote icon */
 }
 .downvote {
+	height: 50%;
+	width: 100%;
+	position: absolute;
+	top: 50%;
 	/* wraps downvote icon */
+}
+
+html {
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: url("./i/tahoe.jpg") no-repeat center center fixed;
 }
