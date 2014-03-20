@@ -13,18 +13,37 @@ body {
 #header {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
-	color:;
+	background-color: aliceblue;
+	opacity:0.75;
 	position: fixed;
+	display:inline-block;
+	width:100%;
+	padding:5px;
+	z-index:99;
 }
 
 #nameplate {
 	/* the word REDDIT */
 }
 #subhead {
+	font-size:15px;
 	/* the words explore connect laugh */
+}
+#userinfo {
+	font-family: 'Merriweather', serif;
+	font-size:12px;
+	display:inline-block;
 }
 #iconbar {
 	/* wrapper for icons */
+	padding-right:100px;
+	float:right;
+
+}
+#button {h
+	padding-left:5px;
+	display:inline-block;
+
 }
 
 
