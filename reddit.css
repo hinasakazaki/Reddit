@@ -24,6 +24,10 @@ body {
 }
 
 #nameplate {
+	float: left;
+	margin-top: 5px;
+    margin-left: 30px;
+	font-size: 36px;
 	/* the word REDDIT */
 	
 }
@@ -38,6 +42,9 @@ body {
 
 #subhead {
 	font-size:15px;
+	float:left;
+	margin-left:20px;
+	margin-top:19px;
 	/* the words explore connect laugh */
 }
 #userinfo {
@@ -47,10 +54,11 @@ body {
 }
 #iconbar {
 	position:relative;
-	top:0;
 	/* wrapper for icons */
-	padding-right:100px;
 	float:right;
+	top:0;
+	margin-right:100px;
+	margin-top:14px;
 }
 #button {
 	padding-left:5px;
