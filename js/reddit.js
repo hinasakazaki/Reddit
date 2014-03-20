@@ -1,11 +1,17 @@
 $(document).ready( function() {
 	$('.votewrap').hover( function(e) {
 		$(this).find('.votecount').addClass('votecount_opaque');
+		$(this).find('.info').addClass('info_opaque');
 	}, function(e) {
 		$(this).find('.votecount').removeClass('votecount_opaque');
+		$(this).find('.info').removeClass('info_opaque');
 	});
 
 
+	$('a').click( function(e) {
+		e.stopPropagation();
+	});
+	
 	$('.upvote').click( function(e) {
 		var wrapper = $(this).parent('.votewrap');
 		if(wrapper.hasClass('upvoted')) {
