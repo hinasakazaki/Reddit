@@ -13,12 +13,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	background-color: aliceblue;
-	opacity:0.75;
 	position: fixed;
 	display:inline-block;
 	width:100%;
+	height: 58px;
 	padding:5px;
 	z-index:99;
+	top:0;
+	opacity:0.75;
 }
 
 #nameplate {
@@ -48,6 +50,7 @@ body {
 /* body styling */
 #content {
 	width: 100%;
+	margin-top: 68px;
 }
 .center {
 	margin: 0 auto;
@@ -62,7 +65,7 @@ body {
 .col {
 	height: 200px;
 	display: table-cell;
-	padding: 1.8%;
+	padding: 1.2%;
 	position: relative;
 	z-index: 10;
 }
@@ -77,7 +80,6 @@ body {
 .span3 {
 	/*width: 37.5%;*/
 	width: 30%;
-	margin: 1%;
 }
 /* content holders */
 .full {
@@ -108,25 +110,28 @@ body {
 	margin-bottom: 4.5%;
 }
 .text p {
+	margin: 1em;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 /* upvote/downvote wrapper */
 .votewrap {
-	/* clickthrough this baby - is this inherited? */
-	pointer-events: none;
 	width: 100%;
 	height: 100%;
 	position: relative;
 
-	transition: opacity 0.5 linear;
-	opacity: 1;
 	z-index: initial;
+	/* #DDD */
+	background-color: rgba(221, 221, 221, 0);
+	transition: background-color 0.15s linear;
 }
 .votewrap.fourtyfive {
 	height: 45%;
 }
 .votewrap:hover {
-	opacity: 0.5;
+	/* #333 */
+	background-color: rgba(51, 51, 51, 0.5);
 }
 .votecount {
 	font-family: "Montserrat", sans-serif;
@@ -142,6 +147,24 @@ body {
 	line-height: 100px;
 	margin-left: -75px;
 	margin-top: -50px;
+
+	transition: opacity 0.15s linear;
+	opacity: 0;
+}
+.votewrap.upvoted {
+	/*background-color: #f05a26;*/
+	background-color: rgba(240, 90, 38, 0.75);
+}
+.votewrap.downvoted {
+	/*background-color: #29aae1;*/
+	background-color: rgba(41, 170, 225, 0.75);
+}
+.votecount_opaque {
+	/* triggered by jquery */
+	opacity: 1;
+}
+.fourtyfive .votecount {
+	font-size: 36px;
 }
 .upvote {
 	width: 100%;
