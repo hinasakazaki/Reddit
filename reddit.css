@@ -88,6 +88,8 @@ body {
 	overflow: hidden;
 	position: relative;
 	z-index: -1;
+	border-radius: 8px;
+	box-shadow: 0 4px 2px -2px gray;
 }
 .half {
 	/* okay fine its not really half */
@@ -96,6 +98,8 @@ body {
 	z-index: -1;
 	overflow: hidden;
 	position: relative;
+	border-radius: 3px;
+	box-shadow: 0 4px 2px -2px gray;
 }
 .full img {
 	width: 100%;
